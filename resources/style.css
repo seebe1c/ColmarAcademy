@@ -1,0 +1,705 @@
+html {
+  font-size: 16px;
+  font-family: 'Overpass', 'Asap', serif;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+body {
+  width: 100%;
+}
+
+body .container:nth-child(even) {
+  background-color: #687083;
+  border: 1px solid lightgrey;
+}
+
+h1  {
+  font-family: 'Asap', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #1B202B;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 400;
+  color: #C5CAD7;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+h5 {
+  font-family: 'Asap', sans-serif;
+  font-weight: 700;
+  color: #1B202B;
+  font-size: 2rem;
+}
+
+h6 {
+  font-family: 'Asap', sans-serif;
+  font-weight: 400;
+  color: #1B202B;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1rem;
+  color: #687083;
+
+}
+
+/*General @1024px*/
+
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 1.25;
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+
+}
+
+/*Header*/
+
+header {
+  height: 64px;
+  width: 100%;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 24px;
+}
+
+#logo h1 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  vertical-align: middle;
+  line-height: 27px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+h1 .colmar {
+  font-family: 'Asap', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #1B202B;
+}
+
+.academy {
+  font-family: 'Asap', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #687083;
+}
+
+.desktop_menu {
+  display: inline-flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 24px;
+}
+
+ul li a {
+  margin-left: 16px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #1B202B;
+}
+.mobile_menu {
+  display: none;
+}
+
+/*Header - Mobile*/
+
+@media only screen and (max-width: 768px) {
+  #logo, .desktop_menu {
+    display: none;
+  }
+
+  .mobile_menu {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 16px;
+  }
+
+}
+
+/*Banner section*/
+
+.container .banner {
+  top: 64px;
+  display: flex;
+  vertical-align: baseline;
+}
+
+.banner_image {
+  display: flex;
+  flex-basis: 60%;
+  height: auto;
+  margin: 32px 40px 32px 24px;
+}
+
+.banner_text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+  justify-content: center;
+  align-items: left;
+  width: 320px;
+}
+
+.banner_header {
+  font-size: 2.2rem;
+  font-weight: bolder;
+}
+
+.banner_text .button {
+  background-color: #1B202B;
+  width: 100%;
+  margin-right: 16px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Overpass', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  transition: all 300ms ease 250ms;
+}
+
+.button h3:hover {
+  background-color: #C5CAD7;
+  color: #1B202B;
+}
+
+/*Banner @1024px*/
+
+@media only screen and (max-width: 1024px) {
+  .banner {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+  }
+
+  .banner_image {
+    display: flex;
+    height: auto;
+    margin: 2rem;
+  }
+
+  .banner_text {
+    width: 50%;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    margin-left: 0px;
+  }
+
+  .banner_text .button {
+    width: 80%;
+  }
+}
+
+/*Banner - Mobile*/
+
+@media only screen and (max-width: 768px) {
+  .banner {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+
+  .banner_image {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-left: -24px;
+  }
+
+  .banner_text {
+    margin: 0px 13px 32px -64px;
+    text-align: left;
+    width: 80%;
+    margin-right: 0px;
+    display: flex;
+  }
+
+  .banner_text .button {
+    width: 80%;
+    background-color: #4A484A;
+  }
+}
+
+/*Main Section*/
+
+.main_desktop {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 32px 24px 32px 24px;
+}
+
+.main_desktop img {
+  width: 100%;
+  height: auto;
+}
+
+.practice_text h1 {
+  font-size: 2.25rem;
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+
+.practice_text .practice_ref  {
+  margin-bottom: 32px;
+  font-size: .75rem;
+  font-weight: bold;
+}
+
+.main_desktop .practice_text {
+  font-family: 'Overpass', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #687083;
+}
+
+.main_desktop .practice_text .practice_body {
+  font-weight: lighter;
+  font-size: 0.85rem;
+}
+
+/*Main Section - side section*/
+
+.main_desktop_side {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #C5CAD7;
+  border-right: 1px solid #C5CAD7;
+  padding-bottom: 32px;
+  width: 40%;
+}
+
+.main_desktop_side div:nth-child(3n) {
+  background-color: #C5CAD7;
+}
+
+.orientation, .our_campus, .guest_lecture {
+  display: inline-flex;
+  width: 100%;
+}
+
+.orientation .images, .our_campus .images, .guest_lecture .images {
+  width: 35%;
+  height: auto;
+  margin: 16px 16px 16px 16px;
+}
+
+.images .mobile {
+  display: none;
+}
+
+.main_text {
+  margin-right: 16px
+  width: 65%;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.main_text h2 {
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.main_text p {
+  font-family: 'Overpass', sans-serif;
+  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
+  font-size: 0.8rem;
+  margin-right: 1.25rem;
+}
+
+.main_text a {
+  font-family: 'Overpass', sans-serif;
+  color: #404655;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.main_text a:hover {
+  color: skyblue;
+  font-weight: bolder;
+}
+
+.main_text #mobile_guest2 {
+  display: none;
+}
+
+.main_text #desktop_guest1 {
+  color: #1B202B;
+}
+
+.orientation {
+  border-bottom: 3px solid #C5CAD7;
+}
+
+/*Information @1024px*/
+
+@media only screen and (max-width: 1024px) {
+  .main_desktop {
+    width: 50%;
+    margin-left: 16px
+  }
+
+  .main_desktop_side {
+    width: 50%;
+  }
+}
+
+/*Information - Mobile*/
+
+@media only screen and (max-width: 768px) {
+  .main_desktop_side {
+    justify-content: center;
+    width: 100%;
+    border-left: none;
+    border-right: none;
+  }
+
+  .main_desktop {
+    display: none;
+  }
+
+  .images .desktop {
+    display: none;
+  }
+
+  .images .mobile {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+
+  .main_desktop_side div:nth-child(3n) {
+    background-color: white;
+  }
+
+  .orientation, .our_campus, .guest_lecture {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+
+  .main_text {
+    width: 90%;
+    margin: 16px 16px 16px 32px;
+  }
+
+  .main_text #desktop_guest1 {
+    display: none;
+  }
+
+  .main_text #mobile_guest2 {
+    display: flex;
+    color: #C5CAD7;
+  }
+
+  .orientation {
+    border-bottom: none;
+  }
+}
+
+/*Start Learning desktop*/
+
+.container_learning {
+  display: block;
+  background-color: #C5CAD7;
+  padding-bottom: 16px;
+  margin-right: -16px;
+}
+
+.container_learning h1 {
+  width: 100%;
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 16px;
+  margin: 0;
+}
+
+.desktop_block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 56px;
+  margin-right: 56px;
+}
+
+.panel_learning {
+  width: 260px;
+  background-color: white;
+  border: 16px solid #C5CAD7;
+}
+
+.panel_img img {
+  width: 100%;
+  height: auto;
+}
+
+.panel_description {
+  width: 220px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.panel_description h3 {
+  font-weight: bolder;
+}
+
+.panel_description p {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 200;
+  font-size: 0.9rem;
+  color: #687083;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.container_learning_inner_mobile {
+  display: none;
+}
+
+/*Start Learning @1024px*/
+
+@media only screen and (max-width: 1024px) {
+  .container_learning {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .desktop_block {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+
+/*Start Learning - Mobile*/
+
+@media only screen and (max-width: 768px) {
+  .container_learning {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0px;
+    background-color: white;
+  }
+
+  .mobile_list h3 {
+    padding-bottom: 32px;
+    background-color: #C5CAD7;
+    padding: 16px 0px 16px 16px;
+    margin-bottom: 8px;
+    font-weight: bolder;
+  }
+
+  .container_learning_inner_desktop {
+    display: none;
+  }
+
+  .container_learning_inner_mobile {
+    display: block;
+    justify-content: center;
+    width: 90%;
+    max-width: 480px;
+    margin-bottom: 32px;
+  }
+}
+
+
+/*Thesis Exhibition Section*/
+
+.thesis {
+  display: block;
+}
+
+.thesis #thesis_desktop {
+  width: 100%;
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.thesis #thesis_mobile {
+  display: none;
+}
+
+.thesis_content {
+  display: inline-flex;
+}
+
+.feature_content_video {
+  margin-right: 24px;
+  width: 60%;
+  margin-left: 24px;
+}
+
+.feature_content_video h3 {
+  padding-bottom: 8px;
+  font-weight: bolder;
+}
+
+.feature_content_video p {
+  padding-bottom: 32px;
+}
+
+video {
+  margin-bottom: 24px;
+  border: 2px solid #C5CAD7;
+}
+
+.video_mobile {
+  display: none;
+}
+
+#thesis {
+  border-left: none;
+  width: 40%;
+}
+
+.sidebar_block {
+  display: inline-flex;
+}
+
+.sidebar_block img {
+  width: 35%;
+  padding-left: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.sidebar_block .textbox {
+  width: 65%;
+  padding-left: 16px;
+  padding-top: 64px;
+}
+
+.sidebar_block .textbox h3 {
+  font-weight: bolder;
+  padding-bottom: 16px;
+}
+
+#thesis div:first-child {
+  background-color: #C5CAD7;
+  padding-top: 0px;
+}
+
+/*Thesis Exhibition Section @1024px*/
+
+@media only screen and (max-width: 1024px) {
+  .thesis h3 {
+    margin-bottom: 16px;
+  }
+
+  .sidebar_block .textbox h3 {
+    padding-bottom: 0px;
+  }
+}
+
+/*Thesis Exhibition Section - Mobile*/
+
+@media only screen and (max-width: 768px) {
+  .video_mobile {
+    display: block;
+  }
+
+  .thesis #thesis_desktop {
+    display: none;
+  }
+
+  .thesis #thesis_mobile {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 32px;
+    display: block;
+  }
+
+  .thesis_content {
+    display: none;
+  }
+}
+
+/*Footer*/
+
+footer {
+  height: 64px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  border-top: 1px solid #C5CAD7;
+}
+
+footer p {
+  margin-left: 24px;
+  font-family: 'Overpass', sans-serif;
+  font-size: 0.75rem;
+  color: #687083;
+}
+
+.footer_span a {
+  font-family: 'Overpass', sans-serif;
+  font-size: 0.75rem;
+  text-decoration: none;
+  color: #687083;
+  padding-right: 6px;
+}
+
+.footer_span a:hover {
+  color: skyblue;
+}
+
+
+/*Footer Mobile*/
+
+@media only screen and (max-width: 768px) {
+  .footer_span {
+    display: none;
+  }
+
+  footer {
+    border-top: 0px solid #C5CAD7;
+    height: auto;
+    margin-bottom: 16px;
+  }
+}
